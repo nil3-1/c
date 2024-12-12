@@ -1,0 +1,18 @@
+#include<graphics.h> 
+#include<conio.h> 
+int main(){ 
+int gd = DETECT,gm; 
+initgraph(&gd,&gm,"C:\\TURBOC3\\BGI"); 
+int triangle[8]={20,150,60,70,110,150,20,150}; 
+int rect[10]={150,60,280,60,280,150,150,150,150,60}; 
+int pentagon[12]={340,150,320,110,360,70,400,110,380,150,340,150}; 
+int hexagon[14]={360,260,340,240,360,220,400,220,420,240,400,260,360,260}; 
+circle(220,300,90); 
+drawpoly(4, triangle); 
+drawpoly(5, rect); 
+drawpoly(6, pentagon); 
+drawpoly(7, hexagon); 
+getch(); 
+closegraph(); 
+return 0; 
+}
